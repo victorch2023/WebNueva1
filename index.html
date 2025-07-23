@@ -1,11 +1,133 @@
-Hola Mundo Interesante
-Texto de prueba 777
-Texto de prueba3
-<div>
-    Bienvenidos
-</div>
-<div>
-    Invitados espaciales
-    <br>Invitados estelares</br>
-    <br>Invitados dimensionales</br>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cantante Pop Rock - Nombre Artístico</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #f04e30;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #f04e30;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #fff;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #f04e30;
+      margin-bottom: 20px;
+    }
+
+    .discography {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .discography img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nombre Artístico</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#discografia">Discografía</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Bienvenido al mundo de la música pop rock</h2>
+  </section>
+
+  <section class="section" id="sobre-mi">
+    <h3>Sobre mí</h3>
+    <p>Soy un cantante de pop rock con más de 10 años en la escena musical. Mi estilo mezcla la energía del rock con melodías pegajosas del pop. He realizado giras en América Latina y lanzado 3 álbumes que han llegado a miles de fans.</p>
+  </section>
+
+  <section class="section" id="discografia">
+    <h3>Discografía</h3>
+    <div class="discography">
+      <img src="https://via.placeholder.com/200x200?text=Álbum+1" alt="Álbum 1" />
+      <img src="https://via.placeholder.com/200x200?text=Álbum+2" alt="Álbum 2" />
+      <img src="https://via.placeholder.com/200x200?text=Álbum+3" alt="Álbum 3" />
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <p>Puedes escribirme a <strong>contacto@nombreartistico.com</strong> o seguirme en mis redes sociales para más noticias y conciertos.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nombre Artístico. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
